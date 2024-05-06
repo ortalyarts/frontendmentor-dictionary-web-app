@@ -189,9 +189,9 @@ const getContent = (data) => {
                         ${item.synonyms
                           .map(
                             (syn) => `
-                            <li role="option"><a href="" class="btn-synonym" onclick="return getSynonym('${syn}')">${syn}</a></li>`
+                            <li role="option"><a href="" class="btn-synonym" onclick="return getSynonym('${syn}')">${syn}, </a></li>`
                           )
-                          .join(", ")}
+                          .join("")}
                         </ul>
                     </span>
                 </h3>
@@ -232,7 +232,6 @@ const getContent = (data) => {
         <div id="source-link">
             <a class="bodyS" href="${data[0].sourceUrls[0]}" target="_blank"><span class="screen-reader-only">Source link</span><span aria-hidden="true">${data[0].sourceUrls[0]}</span><img src="./assets/images/icon-new-window.svg" width="12" height="12" alt="" aria-hidden="true" /></a>
         </div>
-       
     `;
   }
 };
@@ -288,7 +287,7 @@ async function fetchData() {
     }
     const data = await response.json();
 
-    //console.log(data);
+    console.log(data);
     htmlElements.noResultSection.classList.add("hide");
     getContent(data);
     htmlElements.resultSection.setAttribute("aria-label", `Search results for word ${input.value}`)

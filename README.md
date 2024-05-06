@@ -47,7 +47,7 @@ Users should be able to:
 - Native CSS
 - Vanilla JavaScript ES6
 - Mobile-first workflow
-- fon-size: clamp() - for fluid typography
+- font-size: clamp() - for fluid typography
 - Dark / Light Theme switch + prefers-color-scheme + Fallback in JavaScript 
 - Aria role listbox + option to add accessibility for selecting font-family & synonyms
 - Font-family switch
