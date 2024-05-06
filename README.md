@@ -52,7 +52,7 @@ Users should be able to:
 - Aria role listbox + option to add accessibility for selecting font-family & synonyms
 - Font-family switch
 - Form validation
-- Fetch API to search for term in [Free Disctionary API](https://dictionaryapi.dev/)
+- Fetch API to search for term in [Free Dictionary API](https://dictionaryapi.dev/)
 - Audio() constructor [mdn](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio) - to play audio file
 - Chrome Screen reader - for accessibility check
 - Chrome Lighthouse
