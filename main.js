@@ -148,7 +148,7 @@ const getContent = (data) => {
 
   if (data[0].phonetic) {
     htmlElements.transcription.innerText = data[0].phonetic;
-  } else if (data[0].phonetics && data[0].phonetics.length > 0) {
+  } else if (data[0].phonetics && data[0].phonetics[0].text ) {
     htmlElements.transcription.innerText = data[0].phonetics[0].text;
   }
 
@@ -229,7 +229,7 @@ const getContent = (data) => {
   if (data[0].sourceUrls[0]) {
     htmlElements.source.innerHTML = `
         <h4 class="bodyS">Source</h4>
-        <div id="source-link">
+        <div>
             <a class="bodyS" href="${data[0].sourceUrls[0]}" target="_blank"><span class="screen-reader-only">Source link</span><span aria-hidden="true">${data[0].sourceUrls[0]}</span><img src="./assets/images/icon-new-window.svg" width="12" height="12" alt="" aria-hidden="true" /></a>
         </div>
     `;
